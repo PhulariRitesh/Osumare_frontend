@@ -1,26 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Osumare Digital</title>
     <style>
-        #header {
-            width: 100%;
-            height: 108px;
-            background-color: #fff;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-            padding: 8px 80px 0px 80px;
-            justify-content: space-between;
-        }
+      #house {
+        margin-top: 200px;
+        margin-left: 300px;
+      }
+      .page1 {
+        background-image: url("background-complete 1.png");
+        margin-bottom: 200px;
+      }
+      #header {
+        width: 1440px;
+        height: 108px;
+        display: flex;
+        align-items: center;
+        background-color: #fffffff6;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        padding: 8px 100px 0px 80px;
+        justify-content: space-between;
+      }
+      #contact_button {
+        color: #000;
+        background-color: #fffffff6;
+        border: 1px solid #000;
+        padding: 10px 24px;
+        border-radius: 32px;
+        cursor: pointer;
+        gap: 4px;
+        width: 216px;
+        height: 44px;
+        margin-right: 20px;
+      }
+      #para {
+        font-size: 48px;
+        font: montserrat;
+        font-weight: 700;
+        color: #000;
+        text-align: center;
+        margin-top: 200px;
+        font-weight: 500;
+      }
+      #para2 {
+        font: montserrat;
+        font-size: 32px;
+        line-height: 30px;
+        font-weight: 700;
+        color: #000c1a;
+        margin-top: -8px;
+      }
+      #real_estate {
+        color: blue;
+        font-weight: 700;
+      }
+      .data {
+        width: 899px;
+        height: 284px;
+        margin-top: 130px;
+        gap: 32px;
+        align-content: center;
+      }
+      #data2 {
+        margin-left: 20px;
+        width: 733px;
+        height: 292px;
+      }
+      .content {
+        font-size: 22px;
+        font-style: "Open sans";
+        font-weight: 400;
+        line-height: 36px;
+        color: #333333;
+        text-align: center;
+        margin-left: 340px;
+        margin-top: -40px;
+      }
+      .content2 {
+        font-size: 24px;
+        font-style: "Open sans";
+        font-weight: 400;
+        line-height: 36px;
+        color: #333333;
+      }
+      #get_started {
+        color: #fff;
+        background-color: #0078ff;
+        border: 1px solid #000;
+        padding: 0px 100px;
+        border-radius: 32px;
+        cursor: pointer;
+        gap: 4px;
+        width: fixed;
+        height: 56px;
+        margin-left: 540px;
+        margin-top: -20px;
+      }
+      #get_started2 {
+        color: #fff;
+        background-color: #0078ff;
+        border: 1px solid #000;
+        padding: 0px 10px;
+        border-radius: 32px;
+        width: 233px;
+        height: 61px;
+        cursor: pointer;
+        gap: 4px;
+      }
+      #get_started3 {
+        color: #fff;
+        background-color: #0078ff;
+        border: 1px solid #000;
+        padding: 0px 10px;
+        border-radius: 32px;
+        width: 233px;
+        height: 61px;
+        margin-left: 650px;
+        margin-top: 40px;
+        cursor: pointer;
+        gap: 4px;
+      }
+      .get {
+        font-size: 18px;
+      }
+      #H400 {
+        font-size: 32px;
+        line-height: 48px;
+        container-name: "H400-bold";
+        font-style: "montserrat";
+        font-weight: 700;
+        color: #000c1a;
+        text-align: center;
+        margin-left: 501px;
+        margin-top: 200px;
+      }
+      #H500 {
+        font-size: 32px;
+        line-height: 48px;
+        container-name: "H500-bold";
+        font-style: "montserrat";
+        font-weight: 700;
+        color: #000c1a;
+        text-align: center;
+        margin-left: 601px;
+        margin-top: 200px;
+      }
+      #H600 {
+        font-size: 32px;
+        line-height: 48px;
+        container-name: "H600-bold";
+        font-style: "montserrat";
+        font-weight: 700;
+        color: #000c1a;
+        text-align: center;
+        margin-left: 501px;
+        margin-top: 200px;
+      }
+      #page3 {
+        width:1500px;
+        align-items: center;
+        height: 897px;
+        margin-top: 200px;
+        background-color: #F9F9F9;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .strategy{
+        margin-left: 530px;
+        font-size: 24px;
+        font-weight: 36px;
+        font: Open sans;
+        margin-top: -2px;
+
+      }
+      .insights{
+        margin-left: 580px;
+        font-size: 24px;
+        font-weight: 36px;
+        font: Open sans;
+        margin-top: -2px;
+
+      }
+      .card1 {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 300px;
+        text-align: center;
+        overflow: hidden;
+        padding: 10px 2px;
+    }
+
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <nav id="header" class="ontop">
-        <img src="top.png" width="172px" height="100px">
+      <img src="top.png" width="172px" height="150px" />
+      <button id="contact_button">Contact Us</button>
     </nav>
-</body>
+    <div class="page1">
+      <div class="data">
+        <pre id="para">
+            Elevate <span id="real_estate">Real Estate Success</span> with 
+              Osumare's Digital Experties   </pre>
+        <pre class="content">
+Tailored Solutions for Thriving in the Digital Real Estate Landscape</pre
+        >
+        <button id="get_started"><p class="get">Get started</p></button>
+      </div>
+      <img id="house" src="Header image.png" width="796px" height="538px" />
+    </div>
+    <span id="H400">Real Estate-Focused Digital Mastery</span>
+    <div style="display: flex; margin-left: 80px; margin-top: 100px">
+      <img src="cuate.png" alt="photo" />
+      <div id="data2">
+        <pre id="para2">
+Unlock the Potential of Digital Real 
+Estate Excellence</pre
+        >
+        <pre class="content2">
+At Osumare,we understand that the real estate landscape 
+demands a digital presence that aligns with the intricacies of 
+property marketing.Our range of specialized servicves is 
+meticuluosly designed to catapult your brand's success in the 
+ever-evolving digital property market.</pre
+        >
+        <button id="get_started2"><p class="get">Get started</p></button>
+      </div>
+    </div>
+    <div id="page3">
+    <span id="H500">Our Service Offerings</span>
+    <p class="strategy">Strategies that Drive Property Market Excellence</p>
+    <div style="display: flex;justify-content:space-between;padding-left:20px;padding-right:20px;margin-top:70px">
+    <div class="card1">
+    <img src="Group 117.png" alt="Card1 image" class="card-image" height="52px" width="52px">
+    <div class="card-content">
+        <h2 class="card-title">Automotive SEO</h2>
+        <pre class="card-contnet">Drive Your success with Automotive
+    SEO: Ignite Online Visibility and Outrace
+    the Competition.Accelerate your
+    Business Growth Today</pre>
+    </div>
+    </div>
+    <div class="card1">
+    <img src="Group 118.png" alt="Card2 image" class="card-image" width="52px" height="52px">
+    <div class="card-content">
+        <h2 class="card-title">PPC Precision</h2>
+        <pre class="card-contnet">Maximize visisbility and drive quality
+traffic with meticuluosly targeted Pay-
+Per-Click campaigns.</pre>
+    </div>
+    </div>
+    <div class="card1">
+    <img src="Group 119.png" alt="Card3 image" class="card-image" width="52px" height="52px">
+    <div class="card-content">
+        <h2 class="card-title">Social Acceleration</h2>
+        <pre class="card-contnet">Engage and influence your audience
+across social media platforms,
+amplifying your brand's presence and 
+connection.
+        </pre>
+    </div>
+    </div>
+    <div class="card1">
+    <img src="Group 120.png" alt="Card4 image" class="card-image" width="52px" height="52px">
+    <div class="card-content">
+        <h2 class="card-title">Content Excellence</h2>
+        <pre class="card-contnet">Craft compelling,<automotive-specific>content that resonates with enthusiasts
+and drives engagement.
+</pre>
+    </div>
+    </div>
+    </div>
+    
+    <div style="display: flex;justify-content:space-between;padding-left:20px;padding-right:20px;margin-top:100px;">
+    <div class="card1">
+    <img src="Group 17.png" alt="Card5 image" class="card-image" height="52px" width="52px">
+    <div class="card-content">
+    <h2 class="card-title">Web Design</h2>
+            <pre class="card-contnet">Transform visistors into customers with
+    high-performance websites designed for
+    seamless user experiences and
+    increased conversions.
+    </pre>
+    </div>
+    </div>
+    <div class="card1">
+    <img src="Group 18.png" alt="Card6 image" class="card-image" width="52px" height="52px">
+    <div class="card-content">
+        <h2 class="card-title">Data-Driven Insights</h2>
+        <pre class="card-contnet">Leverage data to refine your strategies,
+making informed decisions that drive
+revenue growth.
+        </pre>
+    </div>
+    </div>
+    <div class="card1">
+    <img src="Group 19.png" alt="Card7 image" class="card-image" width="52px" height="52px">
+    <div class="card-content">
+        <h2 class="card-title">End-to-End Solutions</h2>
+        <pre class="card-contnet">From initial awareness to post-purchase
+loyalty, we offer full-funnel Solutions
+that guide customers through every 
+step of their journey.
+    </pre>
+    </div>
+    </div>
+    <div class="card1">
+    <img src="Group 20.png" alt="Card8 image" class="card-image" width="52px" height="52px">
+    <div class="card-content">
+        <h2 class="card-title">Video Marketing</h2>
+        <pre class="card-contnet">Unleash the Power of Video Marketing:
+Captivate, Engage, and Elevate Your
+Brand with Compelling Visual Stories.
+        </pre>
+    </div>
+    </div>
+    </div>
+    <button id="get_started3"><p class="get">Get started</p></button>
+    </div>
+    <div id="page4">
+    <span id="H600">Navigating Real Estate's Digital Landscape</span>
+    <p class="insights">Insights for Real Estate Marketing Advantage</p>
+    <div style="display: flex;">
+        <div>cards</div>
+    <img src="Frame.png" style="background-color: #F9F9F9;border-radius:32px;" height="736px" width="793px" ></div>
+    </div>
+    <div id="page5">
+    <span id="H600">Driving Property Inquiries to Conversions</span>
+    <p class="insights">Streamlined Strategies for Real Estate Success</p>
+    <div style="display: flex;">
+        <div>
+        <img src="Clouds.png" width="300.66px" height="75.88px" style="margin-left: 74.28px;">
+        <img src="House.png" width="391.76" height="201.63px">
+    </div>
+    </div>
+    <span id="H600">Driving Property Inquiries to Conversions</span>
+  </body>
 </html>
