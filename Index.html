@@ -8,13 +8,11 @@
     <title>Osumare Digital</title>
     <style>
         /* Base css for desktop*/
-        #house {
-            margin-top: 200px;
-            margin-left: 300px;
-        }
+
 
         .page1 {
             background-image: url("background-complete 1.png");
+            background-size: cover;
             margin-bottom: 200px;
         }
 
@@ -202,6 +200,16 @@
             margin-left: 501px;
             margin-top: 400px;
         }
+        #H700 {
+            font-size: 32px;
+            line-height: 48px;
+            font-style: "montserrat";
+            font-weight: 700;
+            color: #000c1a;
+            text-align: center;
+            margin-left: 501px;
+            margin-top: 400px;
+        }
 
         #page3 {
             width: 1500px;
@@ -253,34 +261,6 @@
             margin-top: 50px;
         }
 
-        .spacing {
-            margin-left: 10px;
-        }
-
-        #menu {
-            color: gray;
-            margin-top: -5px
-        }
-
-        #home {
-            color: gray;
-        }
-
-        .Mwnu {
-            display: flex;
-            flex-direction: column;
-            margin-top: 50px;
-            margin-left: 250px;
-        }
-
-        #v {
-            border-radius: 16px;
-        }
-
-        .social {
-            display: flex;
-            margin-top: 10px
-        }
 
         #colu {
             display: flex;
@@ -342,20 +322,7 @@
             gap: 32px;
         }
 
-        .last_page {
-            background-color: #006FED1F;
-            ;
-            border-radius: 32px;
-            box-shadow: 0 6px 8px #0000001A;
-            max-width: 1180px;
-            height: 657px;
-            margin-top: 50px;
-            margin-left: -100px;
-            text-align: center;
-            overflow: hidden;
-            padding: 26px 56px 0px 56px;
-            gap: 32px;
-        }
+
 
         .container {
             position: relative;
@@ -484,10 +451,9 @@
             margin-top: -20px;
         }
 
-        #mail {
-            margin-left: 70px;
-            margin-top: 20px;
-            margin-right: 20px
+        #house {
+            margin-top: 200px;
+            margin-left: 300px;
         }
 
         #icon {
@@ -572,6 +538,12 @@
             color: #333333;
             margin-left: 30px;
         }
+        .content5 {
+            font-size: 20px;
+            font-style: "Open sans";
+            color: #333333;
+            margin-left: 30px;
+        }
 
         #page7 {
             margin-top: 100px;
@@ -646,7 +618,357 @@
             margin-left: 74.28px;
         }
 
+        #home {
+            color: gray;
+        }
+
+        #v {
+            border-radius: 16px;
+        }
+        .last_page {
+            background-color: #006FED1F;
+            ;
+            border-radius: 32px;
+            box-shadow: 0 6px 8px #0000001A;
+            max-width: 1180px;
+            height: 657px;
+            margin-top: 50px;
+            margin-left: -100px;
+            text-align: center;
+            overflow: hidden;
+            padding: 26px 56px 0px 56px;
+            gap: 32px;
+        }
+        
+        #mail {
+            margin-left: 70px;
+            margin-top: 20px;
+            margin-right: 20px
+        }
+
+        .Menu {
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            margin-left: 80px;
+        }
+
+        #menu {
+            color: gray;
+            margin-top: -5px
+        }
+
+        .social {
+            display: flex;
+            margin-top: 10px
+        }
+        .spacing {
+            margin-left: 10px;
+        }
+
         /*CSS for Tab*/
+        @media screen and (max-width: 900px){
+            #header{
+                width: 768px;
+                padding: 8px 100px 0px 40px;
+            }
+            #contact_button{
+                width: 150px;
+                height: 40px;
+                margin-right: 50px;
+            }
+            #para{
+                font-size: 28px;
+                margin-top: 100px;
+                margin-left: -250px;
+            }
+            .content{
+                font-size: 16px;
+                margin-left: -30px;
+                margin-top: -20px;
+            }
+            #get_started{
+                margin-left: 240px;
+                margin-top: 2px;
+            }
+            .page1{
+                margin-bottom: 100px;
+                background-size: 70%;
+            }
+            #house{
+                margin-left: 40px;
+                width: 656px; height: 500px;
+            }
+            #page2{
+                margin-left: 20px;
+                margin-top: 50px;
+                margin-bottom: -40px;
+            }
+            #H400{
+                font-size: 24px;
+                margin-left: 200px;
+                margin-top: 100px;
+            }
+    #cuate{
+        width: 330px;
+        margin-left: -20px;
+    }
+    #data2{
+        margin-left: 20px;
+        }
+    #para2{
+        font-size: 20px;
+        margin-top: -8px;
+    }
+    .content2{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    #get_started2{
+        width: 150px;
+    }
+    .get2{
+        font-size: 16px;
+    
+    }
+
+    #page3{
+        width: 768px;
+        height: 897px;
+        margin-top: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 150px;
+    }
+    .strategy{
+        margin-left: 250px;
+        font-size: 16px;
+        font-weight: 36px;
+        font: Open sans;
+        margin-top: -2px;
+    }
+    #H500{
+        font-size: 24px;
+        line-height: 48px;
+        container-name: "H500-bold";
+        font-style: "montserrat";
+        font-weight: 700;
+        color: #000c1a;
+        text-align: center;
+        margin-left: 301px;
+        margin-top: 100px;
+    }
+    #card_line_1{
+        padding-left: 4px;
+        padding-right: 40px;
+        margin-top: 70px;
+    }
+    #card_line_2{
+        padding-left: 4px;
+        padding-right: 40px;
+        margin-top: 100px;
+    }
+    .card1{
+        max-width: 150px;
+        height: 200px;
+    }
+    .card-content{
+        padding: 10px 2px;
+        font-size: 9px;
+    }
+#get_started3{
+    margin-left: 250px;
+    margin-top: 40px;
+}
+#H600{
+    font-size: 16px;
+    margin-left: 250px;
+}
+.insights{
+    font-size: 16px;
+    margin-left: 250px;
+}
+#page4{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#column_1_card{
+    padding-left: 8px;
+    width: 250px;
+}
+.card-content2{
+    margin-left: -70px;
+    padding: 10px 2px;
+    font-size: 7px;
+}
+.card-contnet3{
+    font-size: 6.5px;
+}
+#bigimage_1{
+    width: 500px;
+    height: 600px;
+}
+.image_house{
+    width: 90px;
+}
+#cloud{
+    width: 150px;
+}
+.ho{
+    width: 200px;
+}
+.magnify{
+    width: 200px;
+}
+#page5{
+    margin-bottom: -100px;
+}
+#icon{
+    width: 70px;
+    height: 70px;
+    margin-left: 150px;
+}
+b{
+    font-size: 14px;
+    margin-left: 100px;
+}
+.content3{
+    font-size: 11px;
+}
+#H700{
+    margin-left: 300px;
+    font-size: 16px;
+}
+#conversion{
+    margin-left: 100px;
+}
+#trust{
+    margin-left: 100px;
+}
+#icon_s{
+    margin-left: 130px;
+    width: 70px;
+    height: 70px;
+}
+#peace{
+    margin-left: 5vw;
+    font-size: 20px;
+}
+#ellipse1{
+width: 300px;
+margin-top: -150px;
+}
+#ellipse2{
+    width: 300px;
+    margin-top: -250px;
+
+}
+.content4{
+    font-size: 12px;
+    margin-left: -150px;
+}
+.but{
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+#H500{
+    margin-left: 200px;
+}
+.strategy{
+    margin-left: 200px;
+}
+.card3{
+    width: 700px;
+    height: 300px;
+    margin-left: 10px;
+}
+#v{
+    width: 450px;
+    height: 300px;
+}
+#team{
+width: 40px;
+height: 40px;
+margin-left: -40px;
+}
+#symbol{
+    width: 40px;
+    height: 40px;
+}
+#experties{
+    margin-left: -70px;
+    font-size: 12px;
+}
+#Tabish{
+    font-size: small;
+}
+#frame{
+    margin-left: 300px;
+}
+#questions{
+    margin-left: 5vw;
+    font-size: 20px;
+}
+#ques_col{
+    margin-left: 180px;
+}
+#remove{
+    width: 500px;
+}
+#fo{
+    width: 500px;
+}
+#connect{
+    margin-left: -15vw;
+    font-size: 20px;
+}
+.content5{
+    font-size: 12px;
+    margin-left: -200px;
+}
+.card4{
+    width: 400px;
+    height: 300px;
+    margin-left: -150px;
+}
+#position{
+    margin-left: -200px;
+    margin-top: 20px;
+}
+#input1{
+    width: 150px;
+    height: 20px;
+    margin-left:-40px;       
+}
+#message{
+    margin-left: -150px;
+    margin-top: 10px;
+}
+#input2{
+    width: 150px;
+    height: 190px;
+    margin-left: 10px;
+}
+#but2{
+    margin-left: 90px;
+    height: 50px;
+    width: 180px;
+}
+.last_page{
+    margin-top: 100px;
+    width:600px ;
+    height: 400px;
+    margin-left:-250px ;
+}
+.top{
+    margin-left: -500px;
+    width: 50px;
+    height: 50px;
+}
+#gap2{
+    font-size: 10px;
+}
+    }
 
 
         /*CSS for Mobile*/
@@ -673,7 +995,7 @@ Tailored Solutions for Thriving in the Digital Real Estate Landscape</pre>
     </div>
     <span id="H400">Real Estate-Focused Digital Mastery</span>
     <div id="page2">
-        <img src="cuate.png" alt="photo" />
+        <img src="cuate.png" alt="photo" id="cuate"/>
         <div id="data2">
             <pre id="para2">
 Unlock the Potential of Digital Real 
@@ -685,7 +1007,7 @@ property marketing.Our range of specialized servicves is
 meticuluosly designed to catapult your brand's success in the 
 ever-evolving digital property market.</pre>
             <button id="get_started2">
-                <p class="get">Get started</p>
+                <p class="get2">Get started</p>
             </button>
         </div>
     </div>
@@ -790,9 +1112,9 @@ Brand with Compelling Visual Stories.
                 <div class="card2">
                     <div id="column_1_card">
                         <img src="Group 1.png" alt="Card image1" class="card-image" width="52px" height="52px">
-                        <div class="card-content">
+                        <div class="card-content2">
                             <h2 class="card-title">Market Trends Analysis</h2>
-                            <pre class="card-contnet">
+                            <pre class="card-contnet3">
                     Predictive insights to guide real estate strategies.</pre>
                         </div>
                     </div>
@@ -800,9 +1122,9 @@ Brand with Compelling Visual Stories.
                 <div class="card2">
                     <div id="column_1_card">
                         <img src="Group 2.png" alt="Card image2" class="card-image" width="52px" height="52px">
-                        <div class="card-content">
+                        <div class="card-content2">
                             <h2 class="card-title">Targeted Buyer Persona</h2>
-                            <pre class="card-contnet">
+                            <pre class="card-contnet3">
                 Understand and connect with your ideal property buyers.</pre>
                         </div>
                     </div>
@@ -810,9 +1132,9 @@ Brand with Compelling Visual Stories.
                 <div class="card2">
                     <div id="column_1_card">
                         <img src="Group 3.png" alt="Card8 image" class="card-image" width="52px" height="52px">
-                        <div class="card-content">
+                        <div class="card-content2">
                             <h2 class="card-title">Competitor insights</h2>
-                            <pre class="card-contnet">
+                            <pre class="card-contnet3">
                 Stand out in the property market with informed strategies.</pre>
                         </div>
                     </div>
@@ -820,9 +1142,9 @@ Brand with Compelling Visual Stories.
                 <div class="card2">
                     <div id="column_1_card">
                         <img src="Group 4.png" alt="Card8 image" class="card-image" width="52px" height="52px">
-                        <div class="card-content">
+                        <div class="card-content2">
                             <h2 class="card-title">Visual content Appeal</h2>
-                            <pre class="card-contnet">
+                            <pre class="card-contnet3">
                 Captivate buyers with appealing visuals and immersive
 experiences. </pre>
                         </div>
@@ -837,9 +1159,9 @@ experiences. </pre>
         <p class="insights">Streamlined Strategies for Real Estate Success</p>
         <div class="page5">
             <div class="image_house">
-                <img src="Clouds.png" width="300.66px" height="75.88px">
+                <img src="Clouds.png" width="300.66px" height="75.88px" id="cloud">
                 <div class="container">
-                    <img src="House.png" alt="House">
+                    <img src="House.png" alt="House" class="ho">
                     <img src="magnifying-glass.png" alt="magnifying-glass" class="magnify">
                 </div>
             </div>
@@ -877,8 +1199,7 @@ strategies.</pre>
                 </div>
             </div>
             <div class="row2">
-                <div id="col"><img src="icon_3.png" width="190px" height="190px" id="icon">
-                    <b>Social Proof Utilization</b>
+                <div id="col"><img src="icon_3.png" width="190px" height="190px" id="icon">                <b>Social Proof Utilization</b>
                     <pre class="content3">      Leverage the power of testimonials and success stories
       from satisfied buyers to build and trust and credibility,
       encoraging hesitant prospects to take action</pre>
@@ -895,7 +1216,7 @@ strategies.</pre>
         </div>
     </div>
     <div id="page7">
-        <span id="H600" class="H6">Our Experties In Action</span>
+        <span id="H700" class="H6">Our Experties In Action</span>
         <div class="col2">
             <div class="row1">
                 <div id="col"><img src="icon_5.png" width="190px" height="190px" id="icon">
@@ -951,9 +1272,9 @@ strategies.</pre>
                 <img src="Video.png" width="600px" height="464px" id="v">
                 <div id="colu">
                     <div id="ro">
-                        <img src="team.png" width="80px" height="80px">
+                        <img src="team.png" width="80px" height="80px" id="team">
                         <span id="Tabish">Tabish Khan</span>
-                        <img src="symbol.png" width="62px" height="62px">
+                        <img src="symbol.png" width="62px" height="62px" id="symbol">
                     </div>
                     <pre id="experties">Osumare's expertise in pharma marketing
     is unparalleled. Their strategies helped 
@@ -972,7 +1293,7 @@ driving remarkable growth.</pre>
                     most likely to engage with your brand.</pre>
     </div>
     <div id="ques_col">
-        <img src="div.faq-box.png" width="800px" height="68px">
+        <img src="div.faq-box.png" width="800px" height="68px" id="fo">
         <img src="div.faq-box__question.png" width="800px" height="68" id="remove">
         <img src="div.faq-box_2.png" width="800px" height="201" id="remove">
     </div>
@@ -981,7 +1302,7 @@ driving remarkable growth.</pre>
         <img src="Ellipse 193.png" width="576px" height="576px" id="ellipse3">
         <span id="col">
             <b id="connect">Connect with Our Digital Marketing Experts</b>
-            <pre class="content4">
+            <pre class="content5">
             Reach out for Tailored Strategies and Result-Driven Solutions.
                         Let's Elevate Your Online Presence Together</pre>
             <div class="card4">
@@ -1008,12 +1329,12 @@ driving remarkable growth.</pre>
                 </form>
             </div>
         </span>
-        <img src="Ellipse 192.png" width="381px" height="630px" id="ellipse4">
+        <img src="Ellipse 192.png" width="381px" height="630px" id="ellipse2">
     </div>
     <div class="last_page">
         <div class="row3">
             <div>
-                <img src="top.png" width="200px" height="200px" id="top">
+                <img src="top.png" width="200px" height="200px" id="top" class="top">
                 <pre id="gap2"> best digital marketing agency in Pune with a
     proven track record of consistently delivering
     quality service.</pre>
